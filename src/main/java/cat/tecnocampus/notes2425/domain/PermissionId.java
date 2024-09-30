@@ -2,8 +2,10 @@ package cat.tecnocampus.notes2425.domain;
 
 import jakarta.persistence.Embeddable;
 
+import java.io.Serializable;
+
 @Embeddable
-public class PermissionId {
+public class PermissionId implements Serializable {
     private long noteId;
     private long userId;
 
