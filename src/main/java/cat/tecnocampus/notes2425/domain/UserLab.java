@@ -13,9 +13,6 @@ public class UserLab {
     private String name;
     private String email;
 
-    @OneToMany(mappedBy = "userlab", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, orphanRemoval = true)
-    private Set<Tag> notes;
-
     public UserLab() {}
 
     public UserLab(long id, String name, String email) {this.id = id; this.name = name; this.email = email; }
@@ -26,7 +23,5 @@ public class UserLab {
     public void setName(String name) { this.name = name; }
     public String getEmail() { return email; }
     public void setEmail(String email) { this.email = email; }
-    public Set<Tag> getNotes() { return notes; }
-    public void setNotes(Set<Tag> notes) { this.notes = notes; }
 
 }
