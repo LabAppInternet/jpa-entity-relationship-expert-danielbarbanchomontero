@@ -1,7 +1,5 @@
 package cat.tecnocampus.notes2425.domain;
 
-
-
 import jakarta.persistence.*;
 
 @Entity

@@ -3,7 +3,7 @@ package cat.tecnocampus.notes2425.domain;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Tag")
+@Table(name = "tag")
 public  class Tag {
     @Id
     private long id;
