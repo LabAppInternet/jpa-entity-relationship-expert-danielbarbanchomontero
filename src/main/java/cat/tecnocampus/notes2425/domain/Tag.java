@@ -9,10 +9,6 @@ public  class Tag {
     private long id;
     private String name;
 
-    @ManyToOne
-    @JoinColumn(name = "note_id")
-    private Note note;
-
     public Tag() {}
 
     public Tag(long id, String name) { this.id = id; this.name = name; }
