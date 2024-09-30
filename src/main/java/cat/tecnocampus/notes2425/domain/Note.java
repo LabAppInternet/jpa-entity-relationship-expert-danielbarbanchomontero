@@ -7,8 +7,6 @@ import java.util.Objects;
 import java.util.Set;
 import jakarta.persistence.*;
 
-//Long id, UserLab owner, String title, String content, LocalDateTime creationDate, Set<Tag> tags
-
 @Entity
 @Table(name = "notes")
 public class Note{
@@ -44,7 +42,7 @@ public class Note{
     public LocalDateTime getCreationDate() { return creationDate; }
     public void setCreationDate(LocalDateTime creationDate) { this.creationDate = creationDate; }
     public Set<Tag> getTags() { return tags; }
-    public boolean isOwner(long id){return this.owner.getId() == id}
+    public boolean isOwner(long id){return this.owner.getId() == id;}
     public int hashCode(){
         return Objects.hash(id);
     }
